@@ -3,10 +3,42 @@
 <head>
    <title>Цитрус майстер - онлайн калькулятор разовых услуг</title>
    <link rel="icon" href="https://1stweb.site/wp-content/uploads/2023/05/favicon-32x32-1.png" type="image/x-icon">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <style>
       * {
          box-sizing: border-box;
       }
+      .container {
+  max-width: 100%;
+  padding: 10px;
+}
+
+.services-checkbox {
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.service-image {
+  width: 100px;
+  height: 100px;
+  margin: 0 auto 10px;
+}
+
+.services-checkbox label {
+  text-align: center;
+}
+
+.quantity-controls {
+  justify-content: center;
+}
+
+.quantity-controls .quantity-input {
+  width: 60px;
+}
+
+#deselect-all-btn {
+  margin: 20px auto;
+}
 
       body {
          font-family: Arial, sans-serif;
@@ -101,7 +133,7 @@
       .quantity-controls .quantity-input {
          width: 40px;
          text-align: center;
-         border: 1px solid #ddd;
+         border: 1px solid #f6f5f5;
          display: inline-block;
          margin: 0 5px;
       }
@@ -123,10 +155,12 @@
       .quantity-controls button:hover {
          background-color: rgb(255, 140, 0);
       }
+
    </style>
 </head>
 <body>
    <h1>Цитрус майстер - онлайн калькулятор разовых услуг</h1>
+   <div class="container">
    <div class="services-checkbox">
       <img class="service-image" src="https://www.ctrs.com.ua/_next/image/?url=https://i.citrus.world/imgcache/size_180/uploads/shop/2/a/2a2173653c2768de432f46d917b68aad.png&w=256&q=60" alt="Service 1">
       <input type="checkbox" id="service1" value="49">
@@ -310,7 +344,7 @@
    </div>
    <div class="total-price-label">Общая стоимость: 0 грн.</div>
    <button id="deselect-all-btn">Снять выделение со всех</button>
-
+</div>
    <script>
       // Получаем все элементы с классом 'services-checkbox'
       var checkboxes = document.querySelectorAll('.services-checkbox input[type="checkbox"]');
