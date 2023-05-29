@@ -1,6 +1,6 @@
 <!DOCTYPE html>
-<!-- saved from url=(0040)file:///C:/Users/DreamTeh/Desktop/3.html -->
-<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<html>
+<head>
    <title>Цитрус майстер - онлайн калькулятор разовых услуг</title>
    <link rel="icon" href="https://1stweb.site/wp-content/uploads/2023/05/favicon-32x32-1.png" type="image/x-icon">
    <style>
@@ -45,11 +45,11 @@
 
       .services-checkbox .quantity-input {
         position: relative;
-	text-align: left;
-	padding: 0;
-	width: 40px;
-	border: 1px solid #ddd;
-	display: inline-block;
+        text-align: left;
+        padding: 0;
+        width: 40px;
+        border: 1px solid #ddd;
+        display: inline-block;
       }
 
       .services-checkbox input[type="checkbox"] {
@@ -68,12 +68,10 @@
       }
 
       .services-checkbox input[type="checkbox"]:checked + label:before {
-         background-color: orange;
-         border: 2px solid white;
+         background-color: rgb(255, 85, 0);
+         border: 2px solid rgb(255, 255, 255);
          content: "\2713";
          text-align: center;
-         line-height: 18px;
-         color: white;
          font-size: 12px;
       }
 
@@ -95,414 +93,289 @@
          margin: 10px auto;
       }
 
-      .services-checkbox label:before {
-         content: "";
-         display: inline-block;
-         width: 10px;
-         height: 10px;
-         margin-right: 10px;
-         border-radius: 50%;
-         background-color: orange;
-         border: 2px solid rgb(255, 255, 255);
-      }
-
-      .services-checkbox input[type="checkbox"]:checked + label:before,
-      .services-checkbox input[type="checkbox"]:focus + label:before {
-         background-color: rgb(255, 0, 0);
-         border: 2px solid orange;
-         content: "\2713";
-         text-align: center;
-         line-height: 18px;
-         color: orange;
-         font-size: 12px;
-      }
       .quantity-controls {
-  display: flex;
-  align-items: center;
-}
+         display: flex;
+         align-items: center;
+      }
 
-.quantity-controls .quantity-input {
-  width: 40px;
-  text-align: center;
-  border: 1px solid #ddd;
-  display: inline-block;
-  margin: 0 5px;
-}
+      .quantity-controls .quantity-input {
+         width: 40px;
+         text-align: center;
+         border: 1px solid #ddd;
+         display: inline-block;
+         margin: 0 5px;
+      }
 
-.quantity-controls button {
-  background-color: orange;
-  color: white;
-  border: none;
-  cursor: pointer;
-  font-weight: bold;
-  font-size: 16px;
-  width: 30px;
-  height: 30px;
-  line-height: 30px;
-  text-align: center;
-  border-radius: 3px;
-}
+      .quantity-controls button {
+         background-color: orange;
+         color: white;
+         border: none;
+         cursor: pointer;
+         font-weight: bold;
+         font-size: 16px;
+         width: 30px;
+         height: 30px;
+         line-height: 30px;
+         text-align: center;
+         border-radius: 3px;
+      }
 
-.quantity-controls button:hover {
-  background-color: rgb(255, 140, 0);
-}
+      .quantity-controls button:hover {
+         background-color: rgb(255, 140, 0);
+      }
    </style>
 </head>
 <body>
    <h1>Цитрус майстер - онлайн калькулятор разовых услуг</h1>
-
    <div class="services-checkbox">
-      <input type="checkbox" id="google" value="199">
-      <label for="google">
-         <img class="service-image" src="./index_files/dc5d2fe53652fbe57ead0e4376056600.png">
-         Створення облікового запису - 199 грн.
-      </label>
+      <img class="service-image" src="https://www.ctrs.com.ua/_next/image/?url=https://i.citrus.world/imgcache/size_180/uploads/shop/2/a/2a2173653c2768de432f46d917b68aad.png&w=256&q=60" alt="Service 1">
+      <input type="checkbox" id="service1" value="49">
+      <label for="service1">Послуга "Наклейка захисного покриття на смартфон" - <b>49грн.</b></label>
       <div class="quantity-controls">
-  <button class="quantity-minus">-</button>
-  <input type="text" class="quantity-input" value="1" readonly="">
-  <button class="quantity-plus">+</button>
-</div>
+         <button class="quantity-minus">-</button>
+         <input class="quantity-input" type="number" value="1" min="1">
+         <button class="quantity-plus">+</button>
+      </div>
+    </div>
+    <div class="services-checkbox">
+      <img class="service-image" src="https://i.citrus.world/imgcache/size_180/uploads/shop/2/9/29af9a106868e6f0306d27f9c1f61707.png" alt="Service 3">
+      <input type="checkbox" id="service6" value="99">
+      <label for="service6">Послуга "Наклейка захисного покриття на планшет" - <b>99грн.</b></label>
+      <div class="quantity-controls">
+         <button class="quantity-minus">-</button>
+         <input class="quantity-input" type="number" value="1" min="1">
+         <button class="quantity-plus">+</button>
+      </div>
+   </div>
+   <div class="services-checkbox">
+      <img class="service-image" src="https://i.citrus.world/imgcache/size_180/uploads/shop/f/d/fd2a799e222daa22da20b3a9e36e6b23.png" alt="Service 2">
+      <input type="checkbox" id="service2" value="49">
+      <label for="service2">Послуга "Адаптація SIM карти" - <b>49грн.</b></label>
+      <div class="quantity-controls">
+         <button class="quantity-minus">-</button>
+         <input class="quantity-input" type="number" value="1" min="1">
+         <button class="quantity-plus">+</button>
+      </div>
+   </div>
+   <div class="services-checkbox">
+      <img class="service-image" src="https://i.citrus.world/imgcache/size_180/uploads/shop/2/7/2733f5739d4398359cae28a7c334b924.png" alt="Service 3">
+      <input type="checkbox" id="service3" value="49">
+      <label for="service3">Послуга "Встановлення та налаштування месенджера" - <b>49грн.</b></label>
+      <div class="quantity-controls">
+         <button class="quantity-minus">-</button>
+         <input class="quantity-input" type="number" value="1" min="1">
+         <button class="quantity-plus">+</button>
+      </div>
+    </div>
+      <div class="services-checkbox">
+        <img class="service-image" src="https://i.citrus.world/imgcache/size_180/uploads/shop/2/0/205b57545e10ad64ebf8dd3234e802a3.png" alt="Service 3">
+        <input type="checkbox" id="service4" value="99">
+        <label for="service4">Послуга "Послуга "Налаштування програми" - <b>99грн.</b></label>
+        <div class="quantity-controls">
+           <button class="quantity-minus">-</button>
+           <input class="quantity-input" type="number" value="1" min="1">
+           <button class="quantity-plus">+</button>
+        </div>
+    </div>
+    <div class="services-checkbox">
+      <img class="service-image" src="https://i.citrus.world/imgcache/size_180/uploads/shop/1/0/101a8ff42ff0811e63765264676da9ca.png" alt="Service 3">
+      <input type="checkbox" id="service5" value="199">
+      <label for="service5">Послуга "Налаштування хмарного сховища" - <b>199грн.</b></label>
+      <div class="quantity-controls">
+         <button class="quantity-minus">-</button>
+         <input class="quantity-input" type="number" value="1" min="1">
+         <button class="quantity-plus">+</button>
+      </div>
+    </div>
+    <div class="services-checkbox">
+      <img class="service-image" src="https://i.citrus.world/imgcache/size_180/uploads/shop/2/7/2733f5739d4398359cae28a7c334b924.png" alt="Service 3">
+      <input type="checkbox" id="service7" value="199">
+      <label for="service7">Послуга "Перенесення листування месенджерів (Viber, WhatsApp і т.д.)" - <b>199грн.</b></label>
+      <div class="quantity-controls">
+         <button class="quantity-minus">-</button>
+         <input class="quantity-input" type="number" value="1" min="1">
+         <button class="quantity-plus">+</button>
+      </div>
+    </div>
+    <div class="services-checkbox">
+      <img class="service-image" src="https://i.citrus.world/imgcache/size_180/uploads/shop/a/6/a67a188e083ca1ec6ca0e4a39d692766.png" alt="Service 3">
+      <input type="checkbox" id="service8" value="199">
+      <label for="service8">Послуга "Перенесення контактів" - <b>199грн.</b></label>
+      <div class="quantity-controls">
+         <button class="quantity-minus">-</button>
+         <input class="quantity-input" type="number" value="1" min="1">
+         <button class="quantity-plus">+</button>
+      </div>
+    </div>
+    <div class="services-checkbox">
+      <img class="service-image" src="https://i.citrus.world/imgcache/size_180/uploads/shop/d/c/dc5d2fe53652fbe57ead0e4376056600.png" alt="Service 3">
+      <input type="checkbox" id="service9" value="199">
+      <label for="service9">Послуга "Створення облікового запису (Microsoft, Google і т.д.)" - <b>199грн.</b></label>
+      <div class="quantity-controls">
+         <button class="quantity-minus">-</button>
+         <input class="quantity-input" type="number" value="1" min="1">
+         <button class="quantity-plus">+</button>
+      </div>
+    </div>
+    <div class="services-checkbox">
+      <img class="service-image" src="https://i.citrus.world/imgcache/size_180/uploads/shop/6/f/6fbf1456ff8e0fd1e8d01cd327ffc09e.png" alt="Service 3">
+      <input type="checkbox" id="service10" value="199">
+      <label for="service10">Послуга "Налаштування офісних додатків на ПК" - <b>199грн.</b></label>
+      <div class="quantity-controls">
+         <button class="quantity-minus">-</button>
+         <input class="quantity-input" type="number" value="1" min="1">
+         <button class="quantity-plus">+</button>
+      </div>
+    </div>
+    <div class="services-checkbox">
+      <img class="service-image" src="https://i.citrus.world/imgcache/size_180/uploads/shop/f/4/f4f48bf1ed2f5822e0357c0eecd4655c.png" alt="Service 3">
+      <input type="checkbox" id="service11" value="199">
+      <label for="service11">Послуга "Чистка пристрою від шкідливого ПО" - <b>199грн.</b></label>
+      <div class="quantity-controls">
+         <button class="quantity-minus">-</button>
+         <input class="quantity-input" type="number" value="1" min="1">
+         <button class="quantity-plus">+</button>
+      </div>
+    </div>
+    <div class="services-checkbox">
+      <img class="service-image" src="https://i.citrus.world/imgcache/size_180/uploads/shop/f/4/f4f48bf1ed2f5822e0357c0eecd4655c.png" alt="Service 3">
+      <input type="checkbox" id="service12" value="249">
+      <label for="service12">Послуга "Початкове налаштування смартфона/планшета" - <b>249грн.</b></label>
+      <div class="quantity-controls">
+         <button class="quantity-minus">-</button>
+         <input class="quantity-input" type="number" value="1" min="1">
+         <button class="quantity-plus">+</button>
+      </div>
+    </div>
+    <div class="services-checkbox">
+      <img class="service-image" src="https://i.citrus.world/imgcache/size_180/uploads/shop/2/c/2c9490f89135fad5f10746510f136842.png" alt="Service 3">
+      <input type="checkbox" id="service13" value="299">
+      <label for="service13">Послуга "Оновлення ПО" - <b>299грн.</b></label>
+      <div class="quantity-controls">
+         <button class="quantity-minus">-</button>
+         <input class="quantity-input" type="number" value="1" min="1">
+         <button class="quantity-plus">+</button>
+      </div>
+    </div>
+    <div class="services-checkbox">
+      <img class="service-image" src="https://i.citrus.world/imgcache/size_180/uploads/shop/0/5/05176883c3aaa00325b0ad0f671b6501.png" alt="Service 3">
+      <input type="checkbox" id="service14" value="299">
+      <label for="service14">Послуга "Встановлення пакета підручників" - <b>299грн.</b></label>
+      <div class="quantity-controls">
+         <button class="quantity-minus">-</button>
+         <input class="quantity-input" type="number" value="1" min="1">
+         <button class="quantity-plus">+</button>
+      </div>
+    </div>
+    <div class="services-checkbox">
+      <img class="service-image" src="https://i.citrus.world/imgcache/size_180/uploads/shop/8/f/8fa3ce69143704c0f078108de6aa50af.png" alt="Service 3">
+      <input type="checkbox" id="service15" value="399">
+      <label for="service15">Послуга "Відновлення після системного збою Android" - <b>399грн.</b></label>
+      <div class="quantity-controls">
+         <button class="quantity-minus">-</button>
+         <input class="quantity-input" type="number" value="1" min="1">
+         <button class="quantity-plus">+</button>
+      </div>
+    </div>
+    <div class="services-checkbox">
+      <img class="service-image" src="https://i.citrus.world/imgcache/size_180/uploads/shop/8/f/8fa3ce69143704c0f078108de6aa50af.png" alt="Service 3">
+      <input type="checkbox" id="service17" value="699">
+      <label for="service17">Послуга "Відновлення після системного збою Apple" - <b>699грн.</b></label>
+      <div class="quantity-controls">
+         <button class="quantity-minus">-</button>
+         <input class="quantity-input" type="number" value="1" min="1">
+         <button class="quantity-plus">+</button>
+      </div>
+    </div>
+    <div class="services-checkbox">
+      <img class="service-image" src="https://i.citrus.world/imgcache/size_180/uploads/shop/2/7/270c3c6721847c9b7f2bbd743a60aaee.png" alt="Service 3">
+      <input type="checkbox" id="service16" value="499">
+      <label for="service16">Пакет налаштування "Легкий Старт" - <b>499грн.</b></label>
+      <div class="quantity-controls">
+         <button class="quantity-minus">-</button>
+         <input class="quantity-input" type="number" value="1" min="1">
+         <button class="quantity-plus">+</button>
+      </div>
+    </div>
+    <div class="services-checkbox">
+      <img class="service-image" src="https://i.citrus.world/imgcache/size_180/uploads/shop/8/8/8840b5e509fc028a15b239dddd9043ad.png" alt="Service 3">
+      <input type="checkbox" id="service18" value="549">
+      <label for="service18">Послуга "Налаштування Smart Watch" - <b>549грн.</b></label>
+      <div class="quantity-controls">
+         <button class="quantity-minus">-</button>
+         <input class="quantity-input" type="number" value="1" min="1">
+         <button class="quantity-plus">+</button>
+      </div>
 
    </div>
-
-   <div class="services-checkbox">
-    <input type="checkbox" id="consultation" value="199">
-    <label for="consultation">
-       <img class="service-image" src="./index_files/dc5d2fe53652fbe57ead0e4376056600.png">
-       Консультація тех- експерта - 199 грн.
-    </label>
-    <div class="quantity-controls">
-  <button class="quantity-minus">-</button>
-  <input type="text" class="quantity-input" value="1" readonly="">
-  <button class="quantity-plus">+</button>
-</div>
- </div>
- 
- 
- <div class="services-checkbox">
-    <input type="checkbox" id="steclo" value="49">
-    <label for="steclo">
-       <img class="service-image" src="./index_files/2a2173653c2768de432f46d917b68aad.webp">
-       Поклейка захисного покриття" - 49 грн.
-    </label>
-    <div class="quantity-controls">
-  <button class="quantity-minus">-</button>
-  <input type="text" class="quantity-input" value="1" readonly="">
-  <button class="quantity-plus">+</button>
-</div>
-
- </div>
- 
- 
- <div class="services-checkbox">
-    <input type="checkbox" id="data-migration" value="699">
-    <label for="data-migration">
-              <img class="service-image" src="./index_files/2733f5739d4398359cae28a7c334b924.png">
- 
- Міграція даних - 699 грн.</label>
- <div class="quantity-controls">
-  <button class="quantity-minus">-</button>
-  <input type="text" class="quantity-input" value="1" readonly="">
-  <button class="quantity-plus">+</button>
-</div>
-
- </div>
- 
- <div class="services-checkbox">
-    <input type="checkbox" id="cloud-storage" value="199">
-    <label for="cloud-storage">      <img class="service-image" src="./index_files/101a8ff42ff0811e63765264676da9ca.png">
- Налаштування хмари - 199 грн.</label>
- <div class="quantity-controls">
-  <button class="quantity-minus">-</button>
-  <input type="text" class="quantity-input" value="1" readonly="">
-  <button class="quantity-plus">+</button>
-</div>
-
- </div>
- 
- <div class="services-checkbox">
-    <input type="checkbox" id="software-update" value="299">
-    <label for="software-update">
-       <img class="service-image" src="./index_files/e664af5f9ab5e9669879ae6505aeec8a.png">
- Оновлення ПЗ  - 299 грн.</label>
- <div class="quantity-controls">
-  <button class="quantity-minus">-</button>
-  <input type="text" class="quantity-input" value="1" readonly="">
-  <button class="quantity-plus">+</button>
-</div>
-
- </div>
- 
- <div class="services-checkbox">
-    <input type="checkbox" id="initial-setup" value="249">
-    <label for="initial-setup">      <img class="service-image" src="./index_files/e0c71203bd91177a64a80a1808676417.png">
- Первинне налаштування - 249 грн.</label>
- <div class="quantity-controls">
-  <button class="quantity-minus">-</button>
-  <input type="text" class="quantity-input" value="1" readonly="">
-  <button class="quantity-plus">+</button>
-</div>
-
- </div>
- 
- <div class="services-checkbox">
-    <input type="checkbox" id="contacts-transfer" value="199">
-    <label for="contacts-transfer">      <img class="service-image" src="./index_files/a67a188e083ca1ec6ca0e4a39d692766.png">
- Перенесення контактів - 199 грн.</label>
- <div class="quantity-controls">
-  <button class="quantity-minus">-</button>
-  <input type="text" class="quantity-input" value="1" readonly="">
-  <button class="quantity-plus">+</button>
-</div>
-
- </div>
- 
- <div class="services-checkbox">
-    <input type="checkbox" id="messenger-transfer" value="199">
-    <label for="messenger-transfer"> <img class="service-image" src="./index_files/2733f5739d4398359cae28a7c334b924.png">Перенесення переписки месенджерів (Viber, WhatsApp і т.д.) - 199 грн.</label>
-    <div class="quantity-controls">
-  <button class="quantity-minus">-</button>
-  <input type="text" class="quantity-input" value="1" readonly="">
-  <button class="quantity-plus">+</button>
-</div>
- 
-</div>
- 
- <div class="services-checkbox">
-    <input type="checkbox" id="messenger-setup" value="49">
-    <label for="messenger-setup"><img class="service-image" src="./index_files/2733f5739d4398359cae28a7c334b924.png">Установка  месенджера - 49 грн.</label>
-    <div class="quantity-controls">
-  <button class="quantity-minus">-</button>
-  <input type="text" class="quantity-input" value="1" readonly="">
-  <button class="quantity-plus">+</button>
-</div>
-
-</div>
- 
- <div class="services-checkbox">
-    <input type="checkbox" id="office-apps-setup" value="199">
-    <label for="office-apps-setup"><img class="service-image" src="./index_files/6fbf1456ff8e0fd1e8d01cd327ffc09e.png">Установка офісних додатків - 199 грн.</label>
-    <div class="quantity-controls">
-  <button class="quantity-minus">-</button>
-  <input type="text" class="quantity-input" value="1" readonly="">
-  <button class="quantity-plus">+</button>
-</div>
-
-</div>
- 
- <div class="services-checkbox">
-    <input type="checkbox" id="custom-apps-setup" value="299">
-    <label for="custom-apps-setup"><img class="service-image" src="./index_files/2c9490f89135fad5f10746510f136842.png">Установка додатків за рекомендаціями або бажанням клієнта - 299 грн.</label>
-    <div class="quantity-controls">
-  <button class="quantity-minus">-</button>
-  <input type="text" class="quantity-input" value="1" readonly="">
-  <button class="quantity-plus">+</button>
-</div>
- 
-</div>
- 
- <div class="services-checkbox">
-    <input type="checkbox" id="adlock-protection" value="199">
-    <label for="adlock-protection"><img class="service-image" src="./index_files/1683030518-master-adlock-mobile.png">AdLock Mobile Protection 12 міс. - 199 грн.</label>
-    <div class="quantity-controls">
-  <button class="quantity-minus">-</button>
-  <input type="text" class="quantity-input" value="1" readonly="">
-  <button class="quantity-plus">+</button>
-</div>
- 
-</div>
- 
- <div class="services-checkbox">
-    <input type="checkbox" id="awax-lifetime" value="599">
-    <label for="awax-lifetime"><img class="service-image" src="./index_files/6e6ef21405c5a363d59d314298c2c564.png">Додаток AWAX LifeTime - 599 грн.</label>
-    <div class="quantity-controls">
-  <button class="quantity-minus">-</button>
-  <input type="text" class="quantity-input" value="1" readonly="">
-  <button class="quantity-plus">+</button>
-</div>
- 
-</div>
- 
- <div class="services-checkbox">
-    <input type="checkbox" id="avast" value="249">
-    <label for="avast"><img class="service-image" src="./index_files/8ca5678606ee49ab49a53bf247957c3a.png">Антивирус AVAST - 249 грн.</label>
-    <div class="quantity-controls">
-  <button class="quantity-minus">-</button>
-  <input type="text" class="quantity-input" value="1" readonly="">
-  <button class="quantity-plus">+</button>
-</div>
- 
-</div>
- <div class="services-checkbox">
-    <input type="checkbox" id="eset" value="399">
-    <label for="eset"><img class="service-image" src="./index_files/26b7d131ef97ed44fd95c86aacaeb06a.png">Антивирус Eset - 399 грн.</label>
-    <div class="quantity-controls">
-  <button class="quantity-minus">-</button>
-  <input type="text" class="quantity-input" value="1" readonly="">
-  <button class="quantity-plus">+</button>
-</div>
- 
-</div>
-
-   <div class="services-checkbox">
-      <input type="checkbox" id="total" disabled="">
-      <label class="total-price-label" for="total">Общая стоимость: 0 грн.</label>
-   </div>
-
-   <button id="deselect-all-btn">Скинути вибір</button>
+   <div class="total-price-label">Общая стоимость: 0 грн.</div>
+   <button id="deselect-all-btn">Снять выделение со всех</button>
 
    <script>
-  const quantityControls = document.querySelectorAll('.quantity-controls');
-const totalLabel = document.querySelector('.total-price-label');
-const deselectAllBtn = document.getElementById('deselect-all-btn');
+      // Получаем все элементы с классом 'services-checkbox'
+      var checkboxes = document.querySelectorAll('.services-checkbox input[type="checkbox"]');
+      var quantityInputs = document.querySelectorAll('.services-checkbox .quantity-input');
 
-quantityControls.forEach(function (controls) {
-  const minusBtn = controls.querySelector('.quantity-minus');
-  const plusBtn = controls.querySelector('.quantity-plus');
-  const input = controls.querySelector('.quantity-input');
+      // Добавляем обработчики событий для каждого чекбокса
+      checkboxes.forEach(function(checkbox) {
+          checkbox.addEventListener('change', function() {
+              calculateTotalPrice();
+          });
+      });
 
-  minusBtn.addEventListener('click', function () {
-    let value = parseInt(input.value);
-    if (value > 1) {
-    //   value--;
-      input.value = value;
-      updateTotal();
-    }
-  });
+      // Добавляем обработчики событий для кнопок '+' и '-'
+      var minusButtons = document.querySelectorAll('.quantity-minus');
+      var plusButtons = document.querySelectorAll('.quantity-plus');
 
-  plusBtn.addEventListener('click', function () {
-    let value = parseInt(input.value);
-    // value++;
-    input.value = value;
-    updateTotal();
-  });
+      minusButtons.forEach(function(button) {
+          button.addEventListener('click', function() {
+              updateQuantity(this, -1);
+          });
+      });
 
-  input.addEventListener('change', function () {
-    let value = parseInt(input.value);
-    if (isNaN(value) || value < 1) {
-      value = 1;
-    }
-    input.value = value;
-    updateTotal();
-  });
-});
+      plusButtons.forEach(function(button) {
+          button.addEventListener('click', function() {
+              updateQuantity(this, 1);
+          });
+      });
 
-deselectAllBtn.addEventListener('click', function () {
-  checkboxes.forEach(function (checkbox) {
-    checkbox.checked = false;
-  });
-  quantityInputs.forEach(function (input) {
-   //  input.value = 1;
-  });
-  updateTotal();
-});
-
-function updateTotal() {
-  let total = 0;
-  checkboxes.forEach(function (checkbox, index) {
-    if (checkbox.checked) {
-      const quantity = parseInt(quantityInputs[index].value);
-      total += parseInt(checkbox.value) * quantity;
-    }
-  });
-  totalLabel.textContent = 'Total: ' + total + ' грн.';
-}
-   </script>
-   <script>
-    // Получаем все элементы с классом 'services-checkbox'
-    var checkboxes = document.getElementsByClassName('services-checkbox');
- 
-    // Перебираем все элементы
-    for (var i = 0; i < checkboxes.length; i++) {
-       var checkbox = checkboxes[i].getElementsByTagName('input')[0];
-       var quantityInput = checkboxes[i].getElementsByClassName('quantity-input')[0];
- 
-       // Добавляем обработчик события 'change' для чекбокса
-       checkbox.addEventListener('change', function() {
+      // Добавляем обработчик события для кнопки "Снять выделение со всех"
+      var deselectAllButton = document.getElementById('deselect-all-btn');
+      deselectAllButton.addEventListener('click', function() {
+          checkboxes.forEach(function(checkbox) {
+              checkbox.checked = false;
+          });
           calculateTotalPrice();
-       });
- 
-       // Добавляем обработчики событий 'click' для кнопок '+' и '-'
-       var minusButton = checkboxes[i].getElementsByClassName('quantity-minus')[0];
-       var plusButton = checkboxes[i].getElementsByClassName('quantity-plus')[0];
- 
-       minusButton.addEventListener('click', function() {
-          updateQuantity(this, -1);
-       });
- 
-       plusButton.addEventListener('click', function() {
-          updateQuantity(this, 1);
-       });
- 
-       // Функция для обновления количества услуги и расчета общей стоимости
-       function updateQuantity(element, value) {
-          var quantityInput = element.parentNode.getElementsByClassName('quantity-input')[0];
+      });
+
+      // Функция для обновления количества услуги и расчета общей стоимости
+      function updateQuantity(element, value) {
+          var quantityInput = element.parentNode.querySelector('.quantity-input');
           var quantity = parseInt(quantityInput.value) + value;
- 
+
           if (quantity < 1) {
-             quantity = 1;
+              quantity = 1;
           }
- 
+
           quantityInput.value = quantity;
           calculateTotalPrice();
-       }
-    }
- 
-    // Функция для расчета общей стоимости
-    function calculateTotalPrice() {
-       var totalPrice = 0;
- 
-       for (var i = 0; i < checkboxes.length; i++) {
-          var checkbox = checkboxes[i].getElementsByTagName('input')[0];
-          var quantityInput = checkboxes[i].getElementsByClassName('quantity-input')[0];
- 
-          if (checkbox.checked) {
-             var price = parseInt(checkbox.value);
-             var quantity = parseInt(quantityInput.value);
-             totalPrice += price * quantity;
-          }
-       }
- 
-       // Обновляем элемент с классом 'total-price-label' с общей стоимостью
-       var totalPriceLabel = document.getElementsByClassName('total-price-label')[0];
-       totalPriceLabel.textContent = 'Общая стоимость: ' + totalPrice + ' грн.';
-    }
+      }
 
-   window.addEventListener('DOMContentLoaded', function () {
-      var resetButton = document.getElementById('deselect-all-btn');
-      var quantityMinusButtons = document.querySelectorAll('.quantity-minus');
-      var quantityPlusButtons = document.querySelectorAll('.quantity-plus');
-      var quantityInputs = document.querySelectorAll('.quantity-input');
+      // Функция для расчета общей стоимости
+      function calculateTotalPrice() {
+          var totalPrice = 0;
 
-      resetButton.addEventListener('click', function () {
-         var checkboxes = document.querySelectorAll('.services-checkbox input[type="checkbox"]');
-         checkboxes.forEach(function (checkbox) {
-            checkbox.checked = false;
-         });
-         quantityInputs.forEach(function (input) {
-            input.value = 1;
-         });
-         calculateTotalPrice()
-      });
+          checkboxes.forEach(function(checkbox, index) {
+              if (checkbox.checked) {
+                  var quantity = parseInt(quantityInputs[index].value);
+                  var price = parseInt(checkbox.value);
+                  totalPrice += quantity * price;
+              }
+          });
 
-      quantityMinusButtons.forEach(function (button) {
-         button.addEventListener('click', function () {
-            var input = this.parentNode.querySelector('.quantity-input');
-            var value = parseInt(input.value);
-            if (value > 1) {
-               input.value = value - 1;
-            }
-         });
-      });
-
-      quantityPlusButtons.forEach(function (button) {
-         button.addEventListener('click', function () {
-            var input = this.parentNode.querySelector('.quantity-input');
-            var value = parseInt(input.value);
-            input.value = value + 1;
-         });
-      });
-   });
-</script>
-
-</body></html>
+          var totalPriceLabel = document.querySelector('.total-price-label');
+          totalPriceLabel.textContent = 'Общая стоимость: ' + totalPrice + ' грн.';
+      }
+   </script>
+</body>
+</html>
