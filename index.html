@@ -12,6 +12,20 @@
   max-width: 100%;
   padding: 10px;
 }
+.header {
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         background-color: rgb(255, 140, 0);
+         padding: 10px;
+      }
+
+      .logo {
+         width: 200px;
+         max-width: 100%;
+      }
+
+      /* Existing CSS styles for services-checkbox and other elements */
 
 .services-checkbox {
   flex-direction: column;
@@ -21,7 +35,7 @@
 .service-image {
   width: 100px;
   height: 100px;
-  margin: 0 auto 10px;
+  margin: 0 auto 5px;
 }
 
 .services-checkbox label {
@@ -159,7 +173,10 @@
    </style>
 </head>
 <body>
-   <h1>Цитрус майстер - онлайн калькулятор разовых услуг</h1>
+   <div class="header">
+      <img class="logo" src="https://i.citrus.world/uploads/promo/master/new/Header/logo_ce_master.png?_t=1673847862" alt="Citrus Master Logo">
+   </div>
+   
    <div class="container">
    <div class="services-checkbox">
       <img class="service-image" src="https://www.ctrs.com.ua/_next/image/?url=https://i.citrus.world/imgcache/size_180/uploads/shop/2/a/2a2173653c2768de432f46d917b68aad.png&w=256&q=60" alt="Service 1">
@@ -240,6 +257,17 @@
          <input class="quantity-input" type="number" value="1" min="1">
          <button class="quantity-plus">+</button>
       </div>
+   </div>
+   <div class="services-checkbox">
+     <img class="service-image" src="https://i.citrus.world/imgcache/size_180/uploads/shop/1/6/1683030610-master-photo-migration.png" alt="Service 3">
+     <input type="checkbox" id="service20" value="699">
+     <label for="service20">Послуга "Міграція даних" - <b>699грн.</b></label>
+     <div class="quantity-controls">
+        <button class="quantity-minus">-</button>
+        <input class="quantity-input" type="number" value="1" min="1">
+        <button class="quantity-plus">+</button>
+     </div>
+
     </div>
     <div class="services-checkbox">
       <img class="service-image" src="https://i.citrus.world/imgcache/size_180/uploads/shop/d/c/dc5d2fe53652fbe57ead0e4376056600.png" alt="Service 3">
@@ -290,6 +318,16 @@
          <input class="quantity-input" type="number" value="1" min="1">
          <button class="quantity-plus">+</button>
       </div>
+   </div>
+   <div class="services-checkbox">
+     <img class="service-image" src="https://i.citrus.world/imgcache/size_180/uploads/shop/e/6/e664af5f9ab5e9669879ae6505aeec8a.png" alt="Service 3">
+     <input type="checkbox" id="service19" value="599">
+     <label for="service19">Послуга "Оновлення ПЗ зі збереженням клієнтських даних" - <b>599грн.</b></label>
+     <div class="quantity-controls">
+        <button class="quantity-minus">-</button>
+        <input class="quantity-input" type="number" value="1" min="1">
+        <button class="quantity-plus">+</button>
+     </div>
     </div>
     <div class="services-checkbox">
       <img class="service-image" src="https://i.citrus.world/imgcache/size_180/uploads/shop/0/5/05176883c3aaa00325b0ad0f671b6501.png" alt="Service 3">
@@ -340,8 +378,130 @@
          <input class="quantity-input" type="number" value="1" min="1">
          <button class="quantity-plus">+</button>
       </div>
+   </div>
+   <div class="services-checkbox">
+     <img class="service-image" src="https://i.citrus.world/imgcache/size_180/uploads/shop/3/b/3b5fd926c7cf8487f95c3420cb4c7777.png" alt="Service 3">
+     <input type="checkbox" id="service21" value="249">
+     <label for="service21">Антивірус AVAST Mobile Security Premium 12 міс. - <b>249грн.</b></label>
+     <div class="quantity-controls">
+        <button class="quantity-minus">-</button>
+        <input class="quantity-input" type="number" value="1" min="1">
+        <button class="quantity-plus">+</button>
+     </div>
 
    </div>
+</div>
+<div class="services-checkbox">
+  <img class="service-image" src="https://i.citrus.world/imgcache/size_180/uploads/shop/2/6/26b7d131ef97ed44fd95c86aacaeb06a.png" alt="Service 3">
+  <input type="checkbox" id="service22" value="399">
+  <label for="service22">Антивірус ESET Mobile Security 12 міс. - <b>399грн.</b></label>
+  <div class="quantity-controls">
+     <button class="quantity-minus">-</button>
+     <input class="quantity-input" type="number" value="1" min="1">
+     <button class="quantity-plus">+</button>
+  </div>
+</div>
+</div>
+</div>
+<div class="services-checkbox">
+  <img class="service-image" src="https://www.ctrs.com.ua/_next/image/?url=https://i.citrus.world/imgcache/size_180/uploads/shop/1/6/1683030518-master-adlock-mobile.png&w=256&q=60" alt="Service 3">
+  <input type="checkbox" id="service23" value="199">
+  <label for="service23">Блокувальник реклами AdLock Mobile Protection 12 міс. - <b>199грн.</b></label>
+  <div class="quantity-controls">
+     <button class="quantity-minus">-</button>
+     <input class="quantity-input" type="number" value="1" min="1">
+     <button class="quantity-plus">+</button>
+  </div>
+</div>
+</div>
+<div class="services-checkbox">
+  <img class="service-image" src="https://i.citrus.world/imgcache/size_180/uploads/shop/6/e/6e6ef21405c5a363d59d314298c2c564.png" alt="Service 3">
+  <input type="checkbox" id="service24" value="299">
+  <label for="service24">Блокувальник реклами AWAX 12 міс. для Android і iOS - <b>299грн.</b></label>
+  <div class="quantity-controls">
+     <button class="quantity-minus">-</button>
+     <input class="quantity-input" type="number" value="1" min="1">
+     <button class="quantity-plus">+</button>
+  </div>
+</div>
+</div>
+<div class="services-checkbox">
+  <img class="service-image" src="https://i.citrus.world/imgcache/size_180/uploads/shop/6/e/6e6ef21405c5a363d59d314298c2c564.png" alt="Service 3">
+  <input type="checkbox" id="service25" value="599">
+  <label for="service25">Блокувальник реклами AWAX LifeTime для Android і iOS - <b>599грн.</b></label>
+  <div class="quantity-controls">
+     <button class="quantity-minus">-</button>
+     <input class="quantity-input" type="number" value="1" min="1">
+     <button class="quantity-plus">+</button>
+  </div>
+</div>
+</div>
+<div class="services-checkbox">
+  <img class="service-image" src="https://i.citrus.world/imgcache/size_180/uploads/shop/1/6/1685360745-master-megogo-max.png" alt="Service 3">
+  <input type="checkbox" id="service26" value="299">
+  <label for="service26">MEGOGO "Максимальна" 1 міс. - <b>299грн.</b></label>
+  <div class="quantity-controls">
+     <button class="quantity-minus">-</button>
+     <input class="quantity-input" type="number" value="1" min="1">
+     <button class="quantity-plus">+</button>
+  </div>
+</div>
+</div>
+<div class="services-checkbox">
+  <img class="service-image" src="https://i.citrus.world/imgcache/size_180/uploads/shop/1/6/1685360745-master-megogo-max.png" alt="Service 3">
+  <input type="checkbox" id="service27" value="357">
+  <label for="service27">MEGOGO "Легка" 3 міс. - <b>357грн.</b></label>
+  <div class="quantity-controls">
+     <button class="quantity-minus">-</button>
+     <input class="quantity-input" type="number" value="1" min="1">
+     <button class="quantity-plus">+</button>
+  </div>
+</div>
+</div>
+<div class="services-checkbox">
+  <img class="service-image" src="https://i.citrus.world/imgcache/size_180/uploads/shop/1/6/1685360745-master-megogo-max.png" alt="Service 3">
+  <input type="checkbox" id="service28" value="1118">
+  <label for="service28">MEGOGO "Легка" 12 міс. - <b>1118грн.</b></label>
+  <div class="quantity-controls">
+     <button class="quantity-minus">-</button>
+     <input class="quantity-input" type="number" value="1" min="1">
+     <button class="quantity-plus">+</button>
+  </div>
+</div>
+</div>
+<div class="services-checkbox">
+  <img class="service-image" src="https://i.citrus.world/imgcache/size_180/uploads/shop/1/6/1685360745-master-megogo-max.png" alt="Service 3">
+  <input type="checkbox" id="service29" value="2388">
+  <label for="service29">MEGOGO "Оптимальна" 12 міс. - <b>2388грн.</b></label>
+  <div class="quantity-controls">
+     <button class="quantity-minus">-</button>
+     <input class="quantity-input" type="number" value="1" min="1">
+     <button class="quantity-plus">+</button>
+  </div>
+</div>
+</div>
+<div class="services-checkbox">
+  <img class="service-image" src="https://i.citrus.world/imgcache/size_180/uploads/shop/1/6/1685360745-master-megogo-max.png" alt="Service 3">
+  <input type="checkbox" id="service30" value="2388">
+  <label for="service30">MEGOGO "Максимальна" 12 міс. - <b>3588грн.</b></label>
+  <div class="quantity-controls">
+     <button class="quantity-minus">-</button>
+     <input class="quantity-input" type="number" value="1" min="1">
+     <button class="quantity-plus">+</button>
+  </div>
+</div>
+</div>
+<div class="services-checkbox">
+  <img class="service-image" src="https://i.citrus.world/imgcache/size_180/uploads/shop/7/8/7846cde9232e8226a011795d5cf1ff53.png" alt="Service 3">
+  <input type="checkbox" id="service31" value="591">
+  <label for="service31">Sweet TV "Тариф L" 3 міс. - <b>591грн.</b></label>
+  <div class="quantity-controls">
+     <button class="quantity-minus">-</button>
+     <input class="quantity-input" type="number" value="1" min="1">
+     <button class="quantity-plus">+</button>
+  </div>
+
+</div>
    <div class="total-price-label">Общая стоимость: 0 грн.</div>
    <button id="deselect-all-btn">Снять выделение со всех</button>
 </div>
