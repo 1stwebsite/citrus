@@ -46,7 +46,7 @@
          width: 60px;
       }
       #deselect-all-btn {
-         margin: 20px auto;
+         margin: ;
       }
       body {
          font-family: Arial, sans-serif;
@@ -119,14 +119,15 @@
          box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
       }
       #deselect-all-btn {
-         background-color: orange;
+         background-color: red;
          color: white;
          font-weight: bold;
          padding: 5px 10px;
          border: none;
+         text-align: left;
          cursor: pointer;
          display: block;
-         margin: 10px auto;
+         margin: 15px auto;
       }
       .quantity-controls {
          display: flex;
@@ -486,10 +487,11 @@
   </div>
 
 </div>
-   <div class="total-price-label" id="total-price-label">Общая стоимость: 0 грн.</div>
-   <button id="deselect-all-btn">Снять выделение со всех</button>
-   <div id="sticky-total-price" class="total-price-label">Общая стоимость: 0 грн.</div>
+   <div class="total-price-label" id="total-price-label">Всього: 0 грн.</div>
+   
+   <div id="sticky-total-price" class="total-price-label">Всього: 0 грн.</div>
 </div>
+<div><br><button id="deselect-all-btn">Х</button></div>
    <script>
       // Получаем все элементы с классом 'services-checkbox'
       var checkboxes = document.querySelectorAll('.services-checkbox input[type="checkbox"]');
@@ -554,8 +556,8 @@
           });
 
           var totalPriceLabel = document.querySelector('.total-price-label');
-          totalPriceLabel.textContent = 'Общая стоимость: ' + totalPrice + ' грн.';
-          stickyTotalPrice.textContent = 'Общая стоимость: ' + totalPrice + ' грн.';
+          totalPriceLabel.textContent = 'Всього: ' + totalPrice + ' грн.';
+          stickyTotalPrice.textContent = 'Всього: ' + totalPrice + ' грн.';
       }
 
       // Добавляем обработчик события для скролла
