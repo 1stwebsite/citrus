@@ -9,10 +9,10 @@
          box-sizing: border-box;
       }
       .container {
-  max-width: 100%;
-  padding: 10px;
+         max-width: 100%;
+         padding: 10px;
 }
-.header {
+         .header {
          display: flex;
          align-items: center;
          justify-content: center;
@@ -26,45 +26,37 @@
       }
 
       /* Existing CSS styles for services-checkbox and other elements */
-
-.services-checkbox {
-  flex-direction: column;
-  margin-bottom: 20px;
-}
-
-.service-image {
-  width: 100px;
-  height: 100px;
-  margin: 0 auto 5px;
-}
-
-.services-checkbox label {
-  text-align: center;
-}
-
-.quantity-controls {
-  justify-content: center;
-}
-
-.quantity-controls .quantity-input {
-  width: 60px;
-}
-
-#deselect-all-btn {
-  margin: 20px auto;
-}
-
+      }
+      .services-checkbox {
+         flex-direction: column;
+         margin-bottom: 20px;
+      }
+      .service-image {
+         width: 100px;
+         height: 100px;
+         margin: 0 auto 10px;
+      }
+      .services-checkbox label {
+         text-align: center;
+      }
+      .quantity-controls {
+         justify-content: center;
+      }
+      .quantity-controls .quantity-input {
+         width: 60px;
+      }
+      #deselect-all-btn {
+         margin: 20px auto;
+      }
       body {
          font-family: Arial, sans-serif;
          background-color: #f5f5f5;
          margin: 0;
          padding: 0px;
       }
-
       h1 {
          text-align: center;
       }
-
       .services-checkbox {
          margin-bottom: 10px;
          background-color: #ffffff;
@@ -73,35 +65,29 @@
          display: flex;
          align-items: center;
       }
-
       .services-checkbox:hover {
          background-color: #f5f5f5;
       }
-
       .service-image {
          width: 50px;
          height: 50px;
          margin-right: 10px;
       }
-
       .services-checkbox label {
          cursor: pointer;
          flex-grow: 1;
       }
-
       .services-checkbox .quantity-input {
-        position: relative;
-        text-align: left;
-        padding: 0;
-        width: 40px;
-        border: 1px solid #ddd;
-        display: inline-block;
+         position: relative;
+         text-align: left;
+         padding: 0;
+         width: 40px;
+         border: 1px solid #ddd;
+         display: inline-block;
       }
-
       .services-checkbox input[type="checkbox"] {
          display: none;
       }
-
       .services-checkbox label:before {
          content: "";
          display: inline-block;
@@ -112,7 +98,6 @@
          background-color: orange;
          border: 2px solid white;
       }
-
       .services-checkbox input[type="checkbox"]:checked + label:before {
          background-color: rgb(255, 85, 0);
          border: 2px solid rgb(255, 255, 255);
@@ -120,14 +105,19 @@
          text-align: center;
          font-size: 12px;
       }
-
       .total-price-label {
          font-weight: bold;
          font-size: 1.2em;
          text-align: right;
          margin-top: 10px;
+         position: fixed;
+         bottom: 10px;
+         right: 10px;
+         background-color: orange;
+         padding: 5px 10px;
+         border-radius: 5px;
+         box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
       }
-
       #deselect-all-btn {
          background-color: orange;
          color: white;
@@ -138,12 +128,10 @@
          display: block;
          margin: 10px auto;
       }
-
       .quantity-controls {
          display: flex;
          align-items: center;
       }
-
       .quantity-controls .quantity-input {
          width: 40px;
          text-align: center;
@@ -151,7 +139,6 @@
          display: inline-block;
          margin: 0 5px;
       }
-
       .quantity-controls button {
          background-color: orange;
          color: white;
@@ -165,19 +152,16 @@
          text-align: center;
          border-radius: 3px;
       }
-
       .quantity-controls button:hover {
          background-color: rgb(255, 140, 0);
       }
-
    </style>
 </head>
 <body>
-   <div class="header">
-      <img class="logo" src="https://i.citrus.world/uploads/promo/master/new/Header/logo_ce_master.png?_t=1673847862" alt="Citrus Master Logo">
-   </div>
-   
-   <div class="container">
+    <div class="header">
+        <img class="logo" src="https://i.citrus.world/uploads/promo/master/new/Header/logo_ce_master.png?_t=1673847862" alt="Citrus Master Logo">
+     </div>
+      <div class="container">
    <div class="services-checkbox">
       <img class="service-image" src="https://www.ctrs.com.ua/_next/image/?url=https://i.citrus.world/imgcache/size_180/uploads/shop/2/a/2a2173653c2768de432f46d917b68aad.png&w=256&q=60" alt="Service 1">
       <input type="checkbox" id="service1" value="49">
@@ -482,7 +466,7 @@
 </div>
 <div class="services-checkbox">
   <img class="service-image" src="https://i.citrus.world/imgcache/size_180/uploads/shop/1/6/1685360745-master-megogo-max.png" alt="Service 3">
-  <input type="checkbox" id="service30" value="2388">
+  <input type="checkbox" id="service30" value="3588">
   <label for="service30">MEGOGO "Максимальна" 12 міс. - <b>3588грн.</b></label>
   <div class="quantity-controls">
      <button class="quantity-minus">-</button>
@@ -502,13 +486,15 @@
   </div>
 
 </div>
-   <div class="total-price-label">Общая стоимость: 0 грн.</div>
+   <div class="total-price-label" id="total-price-label">Общая стоимость: 0 грн.</div>
    <button id="deselect-all-btn">Снять выделение со всех</button>
+   <div id="sticky-total-price" class="total-price-label">Общая стоимость: 0 грн.</div>
 </div>
    <script>
       // Получаем все элементы с классом 'services-checkbox'
       var checkboxes = document.querySelectorAll('.services-checkbox input[type="checkbox"]');
       var quantityInputs = document.querySelectorAll('.services-checkbox .quantity-input');
+      var stickyTotalPrice = document.getElementById('sticky-total-price');
 
       // Добавляем обработчики событий для каждого чекбокса
       checkboxes.forEach(function(checkbox) {
@@ -569,7 +555,20 @@
 
           var totalPriceLabel = document.querySelector('.total-price-label');
           totalPriceLabel.textContent = 'Общая стоимость: ' + totalPrice + ' грн.';
+          stickyTotalPrice.textContent = 'Общая стоимость: ' + totalPrice + ' грн.';
       }
+
+      // Добавляем обработчик события для скролла
+      window.addEventListener('scroll', function() {
+          var totalPriceLabelRect = totalPriceLabel.getBoundingClientRect();
+          var stickyTotalPriceRect = stickyTotalPrice.getBoundingClientRect();
+
+          if (totalPriceLabelRect.bottom < 0) {
+              stickyTotalPrice.style.display = 'block';
+          } else {
+              stickyTotalPrice.style.display = 'none';
+          }
+      });
    </script>
 </body>
 </html>
