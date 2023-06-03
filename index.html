@@ -5,6 +5,25 @@
    <link rel="icon" href="https://1stweb.site/wp-content/uploads/2023/05/favicon-32x32-1.png" type="image/x-icon">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <style>
+   .category {
+  margin-bottom: 10px;
+}
+
+.category-heading {
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.category-content {
+  display: none;
+  margin-top: 5px;
+  padding: 5px;
+  border: 1px solid #ccc;
+}
+
+.category-content.active {
+  display: block;
+}
       * {
          box-sizing: border-box;
       }
@@ -163,207 +182,227 @@
         <img class="logo" src="https://i.citrus.world/uploads/promo/master/new/Header/logo_ce_master.png?_t=1673847862" alt="Citrus Master Logo">
      </div>
       <div class="container">
-   <div class="services-checkbox">
-      <img class="service-image" src="https://www.ctrs.com.ua/_next/image/?url=https://i.citrus.world/imgcache/size_180/uploads/shop/2/a/2a2173653c2768de432f46d917b68aad.png&w=256&q=60" alt="Service 1">
-      <input type="checkbox" id="service1" value="49">
-      <label for="service1">Послуга "Наклейка захисного покриття на смартфон" - <b>49грн.</b></label>
-      <div class="quantity-controls">
-         <button class="quantity-minus">-</button>
-         <input class="quantity-input" type="number" value="1" min="1">
-         <button class="quantity-plus">+</button>
-      </div>
-    </div>
-    <div class="services-checkbox">
-      <img class="service-image" src="https://i.citrus.world/imgcache/size_180/uploads/shop/2/9/29af9a106868e6f0306d27f9c1f61707.png" alt="Service 3">
-      <input type="checkbox" id="service6" value="99">
-      <label for="service6">Послуга "Наклейка захисного покриття на планшет" - <b>99грн.</b></label>
-      <div class="quantity-controls">
-         <button class="quantity-minus">-</button>
-         <input class="quantity-input" type="number" value="1" min="1">
-         <button class="quantity-plus">+</button>
-      </div>
-   </div>
-   <div class="services-checkbox">
-      <img class="service-image" src="https://i.citrus.world/imgcache/size_180/uploads/shop/f/d/fd2a799e222daa22da20b3a9e36e6b23.png" alt="Service 2">
-      <input type="checkbox" id="service2" value="49">
-      <label for="service2">Послуга "Адаптація SIM карти" - <b>49грн.</b></label>
-      <div class="quantity-controls">
-         <button class="quantity-minus">-</button>
-         <input class="quantity-input" type="number" value="1" min="1">
-         <button class="quantity-plus">+</button>
-      </div>
-   </div>
-   <div class="services-checkbox">
-      <img class="service-image" src="https://i.citrus.world/imgcache/size_180/uploads/shop/2/7/2733f5739d4398359cae28a7c334b924.png" alt="Service 3">
-      <input type="checkbox" id="service3" value="49">
-      <label for="service3">Послуга "Встановлення та налаштування месенджера" - <b>49грн.</b></label>
-      <div class="quantity-controls">
-         <button class="quantity-minus">-</button>
-         <input class="quantity-input" type="number" value="1" min="1">
-         <button class="quantity-plus">+</button>
-      </div>
-    </div>
-      <div class="services-checkbox">
-        <img class="service-image" src="https://i.citrus.world/imgcache/size_180/uploads/shop/2/0/205b57545e10ad64ebf8dd3234e802a3.png" alt="Service 3">
-        <input type="checkbox" id="service4" value="99">
-        <label for="service4">Послуга "Послуга "Налаштування програми" - <b>99грн.</b></label>
-        <div class="quantity-controls">
-           <button class="quantity-minus">-</button>
-           <input class="quantity-input" type="number" value="1" min="1">
-           <button class="quantity-plus">+</button>
-        </div>
-    </div>
-    <div class="services-checkbox">
-      <img class="service-image" src="https://i.citrus.world/imgcache/size_180/uploads/shop/1/0/101a8ff42ff0811e63765264676da9ca.png" alt="Service 3">
-      <input type="checkbox" id="service5" value="199">
-      <label for="service5">Послуга "Налаштування хмарного сховища" - <b>199грн.</b></label>
-      <div class="quantity-controls">
-         <button class="quantity-minus">-</button>
-         <input class="quantity-input" type="number" value="1" min="1">
-         <button class="quantity-plus">+</button>
-      </div>
-    </div>
-    <div class="services-checkbox">
-      <img class="service-image" src="https://i.citrus.world/imgcache/size_180/uploads/shop/2/7/2733f5739d4398359cae28a7c334b924.png" alt="Service 3">
-      <input type="checkbox" id="service7" value="199">
-      <label for="service7">Послуга "Перенесення листування месенджерів (Viber, WhatsApp і т.д.)" - <b>199грн.</b></label>
-      <div class="quantity-controls">
-         <button class="quantity-minus">-</button>
-         <input class="quantity-input" type="number" value="1" min="1">
-         <button class="quantity-plus">+</button>
-      </div>
-    </div>
-    <div class="services-checkbox">
-      <img class="service-image" src="https://i.citrus.world/imgcache/size_180/uploads/shop/a/6/a67a188e083ca1ec6ca0e4a39d692766.png" alt="Service 3">
-      <input type="checkbox" id="service8" value="199">
-      <label for="service8">Послуга "Перенесення контактів" - <b>199грн.</b></label>
-      <div class="quantity-controls">
-         <button class="quantity-minus">-</button>
-         <input class="quantity-input" type="number" value="1" min="1">
-         <button class="quantity-plus">+</button>
-      </div>
-   </div>
-   <div class="services-checkbox">
-     <img class="service-image" src="https://i.citrus.world/imgcache/size_180/uploads/shop/1/6/1683030610-master-photo-migration.png" alt="Service 3">
-     <input type="checkbox" id="service20" value="699">
-     <label for="service20">Послуга "Міграція даних" - <b>699грн.</b></label>
-     <div class="quantity-controls">
-        <button class="quantity-minus">-</button>
-        <input class="quantity-input" type="number" value="1" min="1">
-        <button class="quantity-plus">+</button>
-     </div>
+         <div class="category">
+            <div class="category-heading" onclick="toggleCategory('category1')"> <img src="https://i.ibb.co/WFfCCVq/Screenshot-1.png" alt="Разові послуги">
+            </div>
+            <div id="category1" class="category-content">
+               <div class="services-checkbox">
+                  <img class="service-image" src="https://www.ctrs.com.ua/_next/image/?url=https://i.citrus.world/imgcache/size_180/uploads/shop/2/a/2a2173653c2768de432f46d917b68aad.png&w=256&q=60" alt="Service 1">
+                  <input type="checkbox" id="service1" value="49">
+                  <label for="service1">Послуга "Наклейка захисного покриття на смартфон" - <b>49грн.</b></label>
+                  <div class="quantity-controls">
+                     <button class="quantity-minus">-</button>
+                     <input class="quantity-input" type="number" value="1" min="1">
+                     <button class="quantity-plus">+</button>
+                  </div>
+                  </div>
+                  <div class="services-checkbox">
+                     <img class="service-image" src="https://i.citrus.world/imgcache/size_180/uploads/shop/2/9/29af9a106868e6f0306d27f9c1f61707.png" alt="Service 3">
+                     <input type="checkbox" id="service6" value="99">
+                     <label for="service6">Послуга "Наклейка захисного покриття на планшет" - <b>99грн.</b></label>
+                     <div class="quantity-controls">
+                        <button class="quantity-minus">-</button>
+                        <input class="quantity-input" type="number" value="1" min="1">
+                        <button class="quantity-plus">+</button>
+                     </div>
+                  </div>
+                  <div class="services-checkbox">
+                     <img class="service-image" src="https://i.citrus.world/imgcache/size_180/uploads/shop/f/d/fd2a799e222daa22da20b3a9e36e6b23.png" alt="Service 2">
+                     <input type="checkbox" id="service2" value="49">
+                     <label for="service2">Послуга "Адаптація SIM карти" - <b>49грн.</b></label>
+                     <div class="quantity-controls">
+                        <button class="quantity-minus">-</button>
+                        <input class="quantity-input" type="number" value="1" min="1">
+                        <button class="quantity-plus">+</button>
+                     </div>
+                  </div>
+                  <div class="services-checkbox">
+                     <img class="service-image" src="https://i.citrus.world/imgcache/size_180/uploads/shop/2/7/2733f5739d4398359cae28a7c334b924.png" alt="Service 3">
+                     <input type="checkbox" id="service3" value="49">
+                     <label for="service3">Послуга "Встановлення та налаштування месенджера" - <b>49грн.</b></label>
+                     <div class="quantity-controls">
+                        <button class="quantity-minus">-</button>
+                        <input class="quantity-input" type="number" value="1" min="1">
+                        <button class="quantity-plus">+</button>
+                     </div>
+                   </div>
+                     <div class="services-checkbox">
+                       <img class="service-image" src="https://i.citrus.world/imgcache/size_180/uploads/shop/2/0/205b57545e10ad64ebf8dd3234e802a3.png" alt="Service 3">
+                       <input type="checkbox" id="service4" value="99">
+                       <label for="service4">Послуга "Послуга "Налаштування програми" - <b>99грн.</b></label>
+                       <div class="quantity-controls">
+                          <button class="quantity-minus">-</button>
+                          <input class="quantity-input" type="number" value="1" min="1">
+                          <button class="quantity-plus">+</button>
+                       </div>
+                   </div>
+                   <div class="services-checkbox">
+                     <img class="service-image" src="https://i.citrus.world/imgcache/size_180/uploads/shop/1/0/101a8ff42ff0811e63765264676da9ca.png" alt="Service 3">
+                     <input type="checkbox" id="service5" value="199">
+                     <label for="service5">Послуга "Налаштування хмарного сховища" - <b>199грн.</b></label>
+                     <div class="quantity-controls">
+                        <button class="quantity-minus">-</button>
+                        <input class="quantity-input" type="number" value="1" min="1">
+                        <button class="quantity-plus">+</button>
+                     </div>
+                   </div>
+                   <div class="services-checkbox">
+                     <img class="service-image" src="https://i.citrus.world/imgcache/size_180/uploads/shop/2/7/2733f5739d4398359cae28a7c334b924.png" alt="Service 3">
+                     <input type="checkbox" id="service7" value="199">
+                     <label for="service7">Послуга "Перенесення листування месенджерів (Viber, WhatsApp і т.д.)" - <b>199грн.</b></label>
+                     <div class="quantity-controls">
+                        <button class="quantity-minus">-</button>
+                        <input class="quantity-input" type="number" value="1" min="1">
+                        <button class="quantity-plus">+</button>
+                     </div>
+                   </div>
+                   <div class="services-checkbox">
+                     <img class="service-image" src="https://i.citrus.world/imgcache/size_180/uploads/shop/a/6/a67a188e083ca1ec6ca0e4a39d692766.png" alt="Service 3">
+                     <input type="checkbox" id="service8" value="199">
+                     <label for="service8">Послуга "Перенесення контактів" - <b>199грн.</b></label>
+                     <div class="quantity-controls">
+                        <button class="quantity-minus">-</button>
+                        <input class="quantity-input" type="number" value="1" min="1">
+                        <button class="quantity-plus">+</button>
+                     </div>
+                  </div>
+                  <div class="services-checkbox">
+                    <img class="service-image" src="https://i.citrus.world/imgcache/size_180/uploads/shop/1/6/1683030610-master-photo-migration.png" alt="Service 3">
+                    <input type="checkbox" id="service20" value="699">
+                    <label for="service20">Послуга "Міграція даних" - <b>699грн.</b></label>
+                    <div class="quantity-controls">
+                       <button class="quantity-minus">-</button>
+                       <input class="quantity-input" type="number" value="1" min="1">
+                       <button class="quantity-plus">+</button>
+                    </div>
+               
+                   </div>
+                   <div class="services-checkbox">
+                     <img class="service-image" src="https://i.citrus.world/imgcache/size_180/uploads/shop/d/c/dc5d2fe53652fbe57ead0e4376056600.png" alt="Service 3">
+                     <input type="checkbox" id="service9" value="199">
+                     <label for="service9">Послуга "Створення облікового запису (Microsoft, Google і т.д.)" - <b>199грн.</b></label>
+                     <div class="quantity-controls">
+                        <button class="quantity-minus">-</button>
+                        <input class="quantity-input" type="number" value="1" min="1">
+                        <button class="quantity-plus">+</button>
+                     </div>
+                   </div>
+                   <div class="services-checkbox">
+                     <img class="service-image" src="https://i.citrus.world/imgcache/size_180/uploads/shop/6/f/6fbf1456ff8e0fd1e8d01cd327ffc09e.png" alt="Service 3">
+                     <input type="checkbox" id="service10" value="199">
+                     <label for="service10">Послуга "Налаштування офісних додатків на ПК" - <b>199грн.</b></label>
+                     <div class="quantity-controls">
+                        <button class="quantity-minus">-</button>
+                        <input class="quantity-input" type="number" value="1" min="1">
+                        <button class="quantity-plus">+</button>
+                     </div>
+                   </div>
+                   <div class="services-checkbox">
+                     <img class="service-image" src="https://i.citrus.world/imgcache/size_180/uploads/shop/f/4/f4f48bf1ed2f5822e0357c0eecd4655c.png" alt="Service 3">
+                     <input type="checkbox" id="service11" value="199">
+                     <label for="service11">Послуга "Чистка пристрою від шкідливого ПО" - <b>199грн.</b></label>
+                     <div class="quantity-controls">
+                        <button class="quantity-minus">-</button>
+                        <input class="quantity-input" type="number" value="1" min="1">
+                        <button class="quantity-plus">+</button>
+                     </div>
+                   </div>
+                   <div class="services-checkbox">
+                     <img class="service-image" src="https://i.citrus.world/imgcache/size_180/uploads/shop/f/4/f4f48bf1ed2f5822e0357c0eecd4655c.png" alt="Service 3">
+                     <input type="checkbox" id="service12" value="249">
+                     <label for="service12">Послуга "Початкове налаштування смартфона/планшета" - <b>249грн.</b></label>
+                     <div class="quantity-controls">
+                        <button class="quantity-minus">-</button>
+                        <input class="quantity-input" type="number" value="1" min="1">
+                        <button class="quantity-plus">+</button>
+                     </div>
+                   </div>
+                   <div class="services-checkbox">
+                     <img class="service-image" src="https://i.citrus.world/imgcache/size_180/uploads/shop/2/c/2c9490f89135fad5f10746510f136842.png" alt="Service 3">
+                     <input type="checkbox" id="service13" value="299">
+                     <label for="service13">Послуга "Оновлення ПО" - <b>299грн.</b></label>
+                     <div class="quantity-controls">
+                        <button class="quantity-minus">-</button>
+                        <input class="quantity-input" type="number" value="1" min="1">
+                        <button class="quantity-plus">+</button>
+                     </div>
+                  </div>
+                  <div class="services-checkbox">
+                    <img class="service-image" src="https://i.citrus.world/imgcache/size_180/uploads/shop/e/6/e664af5f9ab5e9669879ae6505aeec8a.png" alt="Service 3">
+                    <input type="checkbox" id="service19" value="599">
+                    <label for="service19">Послуга "Оновлення ПЗ зі збереженням клієнтських даних" - <b>599грн.</b></label>
+                    <div class="quantity-controls">
+                       <button class="quantity-minus">-</button>
+                       <input class="quantity-input" type="number" value="1" min="1">
+                       <button class="quantity-plus">+</button>
+                    </div>
+                   </div>
+                   <div class="services-checkbox">
+                     <img class="service-image" src="https://i.citrus.world/imgcache/size_180/uploads/shop/0/5/05176883c3aaa00325b0ad0f671b6501.png" alt="Service 3">
+                     <input type="checkbox" id="service14" value="299">
+                     <label for="service14">Послуга "Встановлення пакета підручників" - <b>299грн.</b></label>
+                     <div class="quantity-controls">
+                        <button class="quantity-minus">-</button>
+                        <input class="quantity-input" type="number" value="1" min="1">
+                        <button class="quantity-plus">+</button>
+                     </div>
+                   </div>
+                   <div class="services-checkbox">
+                     <img class="service-image" src="https://i.citrus.world/imgcache/size_180/uploads/shop/8/f/8fa3ce69143704c0f078108de6aa50af.png" alt="Service 3">
+                     <input type="checkbox" id="service15" value="399">
+                     <label for="service15">Послуга "Відновлення після системного збою Android" - <b>399грн.</b></label>
+                     <div class="quantity-controls">
+                        <button class="quantity-minus">-</button>
+                        <input class="quantity-input" type="number" value="1" min="1">
+                        <button class="quantity-plus">+</button>
+                     </div>
+                   </div>
+                   <div class="services-checkbox">
+                     <img class="service-image" src="https://i.citrus.world/imgcache/size_180/uploads/shop/8/f/8fa3ce69143704c0f078108de6aa50af.png" alt="Service 3">
+                     <input type="checkbox" id="service17" value="699">
+                     <label for="service17">Послуга "Відновлення після системного збою Apple" - <b>699грн.</b></label>
+                     <div class="quantity-controls">
+                        <button class="quantity-minus">-</button>
+                        <input class="quantity-input" type="number" value="1" min="1">
+                        <button class="quantity-plus">+</button>
+                     </div>
+                   </div>
+                   <div class="services-checkbox">
+                     <img class="service-image" src="https://i.citrus.world/imgcache/size_180/uploads/shop/2/7/270c3c6721847c9b7f2bbd743a60aaee.png" alt="Service 3">
+                     <input type="checkbox" id="service16" value="499">
+                     <label for="service16">Пакет налаштування "Легкий Старт" - <b>499грн.</b></label>
+                     <div class="quantity-controls">
+                        <button class="quantity-minus">-</button>
+                        <input class="quantity-input" type="number" value="1" min="1">
+                        <button class="quantity-plus">+</button>
+                     </div>
+                   </div>
+                   <div class="services-checkbox">
+                     <img class="service-image" src="https://i.citrus.world/imgcache/size_180/uploads/shop/8/8/8840b5e509fc028a15b239dddd9043ad.png" alt="Service 3">
+                     <input type="checkbox" id="service18" value="549">
+                     <label for="service18">Послуга "Налаштування Smart Watch" - <b>549грн.</b></label>
+                     <div class="quantity-controls">
+                        <button class="quantity-minus">-</button>
+                        <input class="quantity-input" type="number" value="1" min="1">
+                        <button class="quantity-plus">+</button>
+                     </div>
+                  </div>
+                  <div class="services-checkbox">
+                     <img class="service-image" src="https://i.citrus.world/uploads/promo/master/new/Tuning/tuning_4.png?_t=1673912841" alt="Service 3">
+                     <input type="checkbox" id="service32" value="999">
+                     <label for="service32">Послуга "Налаштування гаджету" - <b>999грн.</b></label>
+                     <div class="quantity-controls">
+                        <button class="quantity-minus">-</button>
+                        <input class="quantity-input" type="number" value="1" min="1">
+                        <button class="quantity-plus">+</button>
+                     </div>
+                  </div>
+            </div>
+         </div>
+      
 
-    </div>
-    <div class="services-checkbox">
-      <img class="service-image" src="https://i.citrus.world/imgcache/size_180/uploads/shop/d/c/dc5d2fe53652fbe57ead0e4376056600.png" alt="Service 3">
-      <input type="checkbox" id="service9" value="199">
-      <label for="service9">Послуга "Створення облікового запису (Microsoft, Google і т.д.)" - <b>199грн.</b></label>
-      <div class="quantity-controls">
-         <button class="quantity-minus">-</button>
-         <input class="quantity-input" type="number" value="1" min="1">
-         <button class="quantity-plus">+</button>
-      </div>
-    </div>
-    <div class="services-checkbox">
-      <img class="service-image" src="https://i.citrus.world/imgcache/size_180/uploads/shop/6/f/6fbf1456ff8e0fd1e8d01cd327ffc09e.png" alt="Service 3">
-      <input type="checkbox" id="service10" value="199">
-      <label for="service10">Послуга "Налаштування офісних додатків на ПК" - <b>199грн.</b></label>
-      <div class="quantity-controls">
-         <button class="quantity-minus">-</button>
-         <input class="quantity-input" type="number" value="1" min="1">
-         <button class="quantity-plus">+</button>
-      </div>
-    </div>
-    <div class="services-checkbox">
-      <img class="service-image" src="https://i.citrus.world/imgcache/size_180/uploads/shop/f/4/f4f48bf1ed2f5822e0357c0eecd4655c.png" alt="Service 3">
-      <input type="checkbox" id="service11" value="199">
-      <label for="service11">Послуга "Чистка пристрою від шкідливого ПО" - <b>199грн.</b></label>
-      <div class="quantity-controls">
-         <button class="quantity-minus">-</button>
-         <input class="quantity-input" type="number" value="1" min="1">
-         <button class="quantity-plus">+</button>
-      </div>
-    </div>
-    <div class="services-checkbox">
-      <img class="service-image" src="https://i.citrus.world/imgcache/size_180/uploads/shop/f/4/f4f48bf1ed2f5822e0357c0eecd4655c.png" alt="Service 3">
-      <input type="checkbox" id="service12" value="249">
-      <label for="service12">Послуга "Початкове налаштування смартфона/планшета" - <b>249грн.</b></label>
-      <div class="quantity-controls">
-         <button class="quantity-minus">-</button>
-         <input class="quantity-input" type="number" value="1" min="1">
-         <button class="quantity-plus">+</button>
-      </div>
-    </div>
-    <div class="services-checkbox">
-      <img class="service-image" src="https://i.citrus.world/imgcache/size_180/uploads/shop/2/c/2c9490f89135fad5f10746510f136842.png" alt="Service 3">
-      <input type="checkbox" id="service13" value="299">
-      <label for="service13">Послуга "Оновлення ПО" - <b>299грн.</b></label>
-      <div class="quantity-controls">
-         <button class="quantity-minus">-</button>
-         <input class="quantity-input" type="number" value="1" min="1">
-         <button class="quantity-plus">+</button>
-      </div>
-   </div>
-   <div class="services-checkbox">
-     <img class="service-image" src="https://i.citrus.world/imgcache/size_180/uploads/shop/e/6/e664af5f9ab5e9669879ae6505aeec8a.png" alt="Service 3">
-     <input type="checkbox" id="service19" value="599">
-     <label for="service19">Послуга "Оновлення ПЗ зі збереженням клієнтських даних" - <b>599грн.</b></label>
-     <div class="quantity-controls">
-        <button class="quantity-minus">-</button>
-        <input class="quantity-input" type="number" value="1" min="1">
-        <button class="quantity-plus">+</button>
-     </div>
-    </div>
-    <div class="services-checkbox">
-      <img class="service-image" src="https://i.citrus.world/imgcache/size_180/uploads/shop/0/5/05176883c3aaa00325b0ad0f671b6501.png" alt="Service 3">
-      <input type="checkbox" id="service14" value="299">
-      <label for="service14">Послуга "Встановлення пакета підручників" - <b>299грн.</b></label>
-      <div class="quantity-controls">
-         <button class="quantity-minus">-</button>
-         <input class="quantity-input" type="number" value="1" min="1">
-         <button class="quantity-plus">+</button>
-      </div>
-    </div>
-    <div class="services-checkbox">
-      <img class="service-image" src="https://i.citrus.world/imgcache/size_180/uploads/shop/8/f/8fa3ce69143704c0f078108de6aa50af.png" alt="Service 3">
-      <input type="checkbox" id="service15" value="399">
-      <label for="service15">Послуга "Відновлення після системного збою Android" - <b>399грн.</b></label>
-      <div class="quantity-controls">
-         <button class="quantity-minus">-</button>
-         <input class="quantity-input" type="number" value="1" min="1">
-         <button class="quantity-plus">+</button>
-      </div>
-    </div>
-    <div class="services-checkbox">
-      <img class="service-image" src="https://i.citrus.world/imgcache/size_180/uploads/shop/8/f/8fa3ce69143704c0f078108de6aa50af.png" alt="Service 3">
-      <input type="checkbox" id="service17" value="699">
-      <label for="service17">Послуга "Відновлення після системного збою Apple" - <b>699грн.</b></label>
-      <div class="quantity-controls">
-         <button class="quantity-minus">-</button>
-         <input class="quantity-input" type="number" value="1" min="1">
-         <button class="quantity-plus">+</button>
-      </div>
-    </div>
-    <div class="services-checkbox">
-      <img class="service-image" src="https://i.citrus.world/imgcache/size_180/uploads/shop/2/7/270c3c6721847c9b7f2bbd743a60aaee.png" alt="Service 3">
-      <input type="checkbox" id="service16" value="499">
-      <label for="service16">Пакет налаштування "Легкий Старт" - <b>499грн.</b></label>
-      <div class="quantity-controls">
-         <button class="quantity-minus">-</button>
-         <input class="quantity-input" type="number" value="1" min="1">
-         <button class="quantity-plus">+</button>
-      </div>
-    </div>
-    <div class="services-checkbox">
-      <img class="service-image" src="https://i.citrus.world/imgcache/size_180/uploads/shop/8/8/8840b5e509fc028a15b239dddd9043ad.png" alt="Service 3">
-      <input type="checkbox" id="service18" value="549">
-      <label for="service18">Послуга "Налаштування Smart Watch" - <b>549грн.</b></label>
-      <div class="quantity-controls">
-         <button class="quantity-minus">-</button>
-         <input class="quantity-input" type="number" value="1" min="1">
-         <button class="quantity-plus">+</button>
-      </div>
-   </div>
+         <div class="category-heading" onclick="toggleCategory('category2')">Ліцінзійне ПО</div>
+         <div id="category2" class="category-content">
    <div class="services-checkbox">
      <img class="service-image" src="https://i.citrus.world/imgcache/size_180/uploads/shop/3/b/3b5fd926c7cf8487f95c3420cb4c7777.png" alt="Service 3">
      <input type="checkbox" id="service21" value="249">
@@ -373,9 +412,8 @@
         <input class="quantity-input" type="number" value="1" min="1">
         <button class="quantity-plus">+</button>
      </div>
-
    </div>
-</div>
+   
 <div class="services-checkbox">
   <img class="service-image" src="https://i.citrus.world/imgcache/size_180/uploads/shop/2/6/26b7d131ef97ed44fd95c86aacaeb06a.png" alt="Service 3">
   <input type="checkbox" id="service22" value="399">
@@ -386,8 +424,7 @@
      <button class="quantity-plus">+</button>
   </div>
 </div>
-</div>
-</div>
+
 <div class="services-checkbox">
   <img class="service-image" src="https://www.ctrs.com.ua/_next/image/?url=https://i.citrus.world/imgcache/size_180/uploads/shop/1/6/1683030518-master-adlock-mobile.png&w=256&q=60" alt="Service 3">
   <input type="checkbox" id="service23" value="199">
@@ -398,7 +435,7 @@
      <button class="quantity-plus">+</button>
   </div>
 </div>
-</div>
+
 <div class="services-checkbox">
   <img class="service-image" src="https://i.citrus.world/imgcache/size_180/uploads/shop/6/e/6e6ef21405c5a363d59d314298c2c564.png" alt="Service 3">
   <input type="checkbox" id="service24" value="299">
@@ -409,7 +446,7 @@
      <button class="quantity-plus">+</button>
   </div>
 </div>
-</div>
+
 <div class="services-checkbox">
   <img class="service-image" src="https://i.citrus.world/imgcache/size_180/uploads/shop/6/e/6e6ef21405c5a363d59d314298c2c564.png" alt="Service 3">
   <input type="checkbox" id="service25" value="599">
@@ -420,7 +457,7 @@
      <button class="quantity-plus">+</button>
   </div>
 </div>
-</div>
+
 <div class="services-checkbox">
   <img class="service-image" src="https://i.citrus.world/imgcache/size_180/uploads/shop/1/6/1685360745-master-megogo-max.png" alt="Service 3">
   <input type="checkbox" id="service26" value="299">
@@ -431,7 +468,7 @@
      <button class="quantity-plus">+</button>
   </div>
 </div>
-</div>
+
 <div class="services-checkbox">
   <img class="service-image" src="https://i.citrus.world/imgcache/size_180/uploads/shop/1/6/1685360745-master-megogo-max.png" alt="Service 3">
   <input type="checkbox" id="service27" value="357">
@@ -442,7 +479,7 @@
      <button class="quantity-plus">+</button>
   </div>
 </div>
-</div>
+
 <div class="services-checkbox">
   <img class="service-image" src="https://i.citrus.world/imgcache/size_180/uploads/shop/1/6/1685360745-master-megogo-max.png" alt="Service 3">
   <input type="checkbox" id="service28" value="1118">
@@ -453,7 +490,7 @@
      <button class="quantity-plus">+</button>
   </div>
 </div>
-</div>
+
 <div class="services-checkbox">
   <img class="service-image" src="https://i.citrus.world/imgcache/size_180/uploads/shop/1/6/1685360745-master-megogo-max.png" alt="Service 3">
   <input type="checkbox" id="service29" value="2388">
@@ -464,7 +501,7 @@
      <button class="quantity-plus">+</button>
   </div>
 </div>
-</div>
+
 <div class="services-checkbox">
   <img class="service-image" src="https://i.citrus.world/imgcache/size_180/uploads/shop/1/6/1685360745-master-megogo-max.png" alt="Service 3">
   <input type="checkbox" id="service30" value="3588">
@@ -475,7 +512,7 @@
      <button class="quantity-plus">+</button>
   </div>
 </div>
-</div>
+
 <div class="services-checkbox">
   <img class="service-image" src="https://i.citrus.world/imgcache/size_180/uploads/shop/7/8/7846cde9232e8226a011795d5cf1ff53.png" alt="Service 3">
   <input type="checkbox" id="service31" value="591">
@@ -485,6 +522,8 @@
      <input class="quantity-input" type="number" value="1" min="1">
      <button class="quantity-plus">+</button>
   </div>
+</div>
+
 
 </div>
    <div class="total-price-label" id="total-price-label">Всього: 0 грн.</div>
@@ -571,6 +610,12 @@
               stickyTotalPrice.style.display = 'none';
           }
       });
+   </script>
+   <script>
+      function toggleCategory(categoryId) {
+         var category = document.getElementById(categoryId);
+         category.classList.toggle('active');
+      }
    </script>
 </body>
 </html>
