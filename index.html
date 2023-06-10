@@ -42,25 +42,43 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background-image: url('https://i.ibb.co/FW3fkqb/Screenshot-1.jpg');
+  background-image: url('https://github.com/1stwebsite1/citrus/blob/main/.github/workflows/back.png?raw=true');
   background-repeat: no-repeat;
   background-size: cover;
   padding: 10px;
+}
+@keyframes logoAnimation {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-15px);
+  }
+  100% {
+    transform: translateY(0);
+  }
 }
 
       .logo {
          width: 400px;
          max-width: 100%;
+         animation: logoAnimation 4s infinite linear;
       }
 
-.footer{
-   display: flex;
-  align-items: center;
-  justify-content: center;
-  background-image: url('https://i.ibb.co/FW3fkqb/Screenshot-1.jpg');
-  background-repeat: no-repeat;
-  background-size: cover;
-  padding: 10px;
+      .footer {
+  background: linear-gradient(to bottom, #838383, #b4a8a8);
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+.footer-text {
+  font-size: 16px;
+  opacity: 1;
+}
+
+.footer-text span {
+  font-weight: bold;
 }
       /* Existing CSS styles for services-checkbox and other elements */
       }
@@ -202,7 +220,7 @@
 </head>
 <body>
     <div class="header">
-        <img class="logo" src="https://i.ibb.co/zsgbdVh/LogoCtrd.png" alt="Citrus Master Logo">
+        <img class="logo" src="https://github.com/1stwebsite1/citrus/blob/main/.github/workflows/logoctrs.png?raw=true" alt="Citrus Master Logo">
      </div>
       <div class="container">
          <div class="category">
@@ -983,10 +1001,8 @@
       }
    </script>
    <body>
-      <div class="footer">
-         <br>
-         Powered by <a href="1stweb.site" 1stweb.site>1stweb.site</a>
-         <br>
-       </div>
+      <footer class="footer">
+         <p class="footer-text">Powered by <a href="https://www.1stweb.site" target="_blank">1stweb.site 2023</a></p>
+       </footer>
 </body>
 </html>
